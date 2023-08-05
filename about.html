@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education </title>
+    <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<!-- carrosel -->
+<link rel="stylesheet" type="text/css" href="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<!--custom css -->
+<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+<style>
+  body {
+  background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+</style>
+</head>
+<body>
+  <!--Main Navigation-->
+<header>
+  <!-- Sidebar -->
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action py-2 ripple"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+          <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-lock fa-fw me-3"></i><span>Password</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+          <i class="fas fa-chart-pie fa-fw me-3"></i><span>SEO</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Orders</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-globe fa-fw me-3"></i><span>International</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-building fa-fw me-3"></i><span>Partners</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-calendar fa-fw me-3"></i><span>Calendar</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-users fa-fw me-3"></i><span>Users</span></a
+        >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-money-bill fa-fw me-3"></i><span>Sales</span></a
+        >
+      </div>
+    </div>
+  </nav>
+  <!-- Sidebar -->
+
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://www.sattacademy.com/uploads/company/1666848761.png"
+          height="25"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Search form -->
+      <form class="d-none d-md-flex input-group w-auto my-auto">
+        <input
+          autocomplete="off"
+          type="search"
+          class="form-control rounded"
+          placeholder='Search (ctrl + "/" to focus)'
+          style="min-width: 225px;"
+        />
+        <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+      </form>
+
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto d-flex flex-row">
+        <!-- Notification dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Icon -->
+        <li class="nav-item">
+          <a class="nav-link me-3 me-lg-0" href="#">
+            <i class="fas fa-fill-drip"></i>
+          </a>
+        </li>
+        <!-- Icon -->
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+
+        <!-- Icon dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="united kingdom flag m-0"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="united kingdom flag"></i>English
+                <i class="fa fa-check text-success ms-2"></i
+              ></a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="poland flag"></i>Polski</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="china flag"></i>中文</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="japan flag"></i>日本語</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="germany flag"></i>Deutsch</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="france flag"></i>Français</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="russia flag"></i>Русский</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="portugal flag"></i>Português</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Avatar -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+              class="rounded-circle"
+              height="22"
+              alt="Avatar"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main style="margin-top: 58px;">
+ 
+  <div class="clipPath ">
+     <div class="container">
+        <div class="text-center text-white heroText">
+            <h3 class="heroTextColor" style="font-size: 8vh;">স্যাট একাডেমি</h3>
+            <h3 class="heroTextColor">শিক্ষা হবে উন্মুক্ত, বাণিজ্যমুক্ত</h3>
+        </div>
+
+        <div class="pt-2">
+            <section class="regular slider">
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+                <div>
+                  <img src="./Image/academy.png">
+                </div>
+              </section>
+        </div>
+
+        
+    <div class="container  mb-10 pb-5 pt-1">
+        <div class="row">
+            <div class="counter" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;  ">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                    <img src="./Image/chat.png" alt="" style="width: 45px; height: 45px"
+                        class="rounded-circle" />
+                    <div class="ms-3">
+                        <h2 class="fw-bold mb-1">500+</h2>
+                        <p class="text-muted mb-0">প্রশ্ন</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                    <img src="./Image/handnote.png" alt="" style="width: 45px; height: 45px"
+                        class="rounded-circle" />
+                    <div class="ms-3">
+                        <h2 class="fw-bold mb-1">120K+</h2>
+                        <p class="text-muted mb-0">শিক্ষার্থী</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                    <img src="./Image/student.png" alt="" style="width: 45px; height: 45px"
+                        class="rounded-circle" />
+                    <div class="ms-3">
+                        <h2 class="fw-bold mb-1">400+</h2>
+                        <p class="text-muted mb-0">মডেল</p>
+                    </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+     </div>  
+  </div>
+
+<!-- caroosel  -->
+
+
+<!-- contounter -->
+<div class="conatainer mt-5 mb-5">
+<div class="row">
+    <div class="col">
+        <h1 class="text-center">
+            <img src="https://www.sattacademy.com/custom/svg/satt_feature.svg" alt="" width="300px">
+        </h1>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="row">
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Alex Ray</p>
+                  <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Kate Hunington</p>
+                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/9.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Soraya Letto</p>
+                  <p class="text-muted mb-0">soraya.letto@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Zeynep Dudley</p>
+                  <p class="text-muted mb-0">zeynep.dudley@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Ayat Black</p>
+                  <p class="text-muted mb-0">ayat.black@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+<!-- books callection  -->
+
+<div class="pt-2">
+<section class="regular slider">
+    <div>
+      <img src="http://placehold.it/350x300?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=6">
+    </div>
+  </section>
+</div>
+
+<div class="categorySection mt-5 mb-5">
+ <div class="category mt-5">
+    <div class="contaner">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <img src="https://www.sattacademy.com/custom/svg/catagory_feacture.svg" alt="" width="20%">
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                  <!-- Toggle button -->
+                  <button
+                  class="navbar-toggler text-white bg-transparent border-white"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarCenteredExample"
+                  aria-controls="navbarCenteredExample"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                <i class="fas fa-bars white-icon"></i>
+                </button>
+              
+                  <!-- Collapsible wrapper -->
+                  <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarCenteredExample"
+                  >
+                    <!-- Left links -->
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                      <li class="nav-item">
+                        <a class="nav-link active hover-zoom text-white " aria-current="page" href="#">১ম-দ্বাদশ শ্রেণি</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  hover-zoom text-white" href="#">ভর্তি পরীক্ষা</a>
+                      </li>
+                      <!-- Navbar dropdown -->
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle text-white"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        চাকরি প্রস্তুতি
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li>
+                            <a class="dropdown-item" href="#"></a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">ভর্তি পরীক্ষা</a>
+                          </li>
+                          <li><a class="text-white" href=""> চাকরি প্রস্তুতি</a></li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">স্কিল ডেভেলপমেন্ট</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled hover-zoom text-white"
+                          >ইসলামিক কর্ণার</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- Left links -->
+                  </div>
+                  <!-- Collapsible wrapper -->
+                </div>
+                <!-- Container wrapper -->
+              </nav>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+    <div class="row">
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Alex Ray</p>
+                  <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Kate Hunington</p>
+                  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/9.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Soraya Letto</p>
+                  <p class="text-muted mb-0">soraya.letto@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Zeynep Dudley</p>
+                  <p class="text-muted mb-0">zeynep.dudley@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Ayat Black</p>
+                  <p class="text-muted mb-0">ayat.black@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+
+<!-- our callection  -->
+<div class="categorySection mt-5 mb-5">
+<div class="category mt-5">
+   <div class="contaner">
+       <div class="row">
+           <div class="col">
+               <div class="text-center">
+                   <img src="https://www.sattacademy.com/custom/svg/book_collection.svg" alt="" width="20%">
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+<!-- books -->
+<div class="container mt-5">
+    <div class="row mt-5 " style="display: flex !important; flex-wrap: wrap !important; justify-content: center !important; ">
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card" style="width: 16rem;">
+                <img src="./Image/book1.jpg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                <div class="card-body">
+                    <div class="" style="display: flex;">
+                        <p class="card-text">(সমন্বিত ব্যাংক) MCQ প্রশ্নের ব্যাখ্যা...
+                            <br>
+                           <small> By Satt Academy</small>  </p>
+                       <div class="mt-5"> <button style=" border: 0px solid white; height: 25px; width: 50px; background-color: rgb(0, 255, 0); padding-bottom: 5px;  ">Free</button></div> 
+                    </div>
+                 
+                  
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card" style="width: 16rem;">
+                <img src="./Image/book1.jpg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                <div class="card-body">
+                    <div class="" style="display: flex;">
+                        <p class="card-text">(সমন্বিত ব্যাংক) MCQ প্রশ্নের ব্যাখ্যা...
+                            <br>
+                           <small> By Satt Academy</small>  </p>
+                       <div class="mt-5"> <button style=" border: 0px solid white; height: 25px; width: 50px; background-color: rgb(0, 255, 0); padding-bottom: 5px;  ">Free</button></div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card" style="width: 16rem;">
+                <img src="./Image/book1.jpg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                <div class="card-body">
+                    <div class="" style="display: flex;">
+                        <p class="card-text">(সমন্বিত ব্যাংক) MCQ প্রশ্নের ব্যাখ্যা...
+                            <br>
+                           <small> By Satt Academy</small>  </p>
+                       <div class="mt-5"> <button style=" border: 0px solid white; height: 25px; width: 50px; background-color: rgb(0, 255, 0); padding-bottom: 5px;  ">Free</button></div> 
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card" style="width: 16rem;">
+                <img src="./Image/book1.jpg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                <div class="card-body">
+                    <div class="" style="display: flex;">
+                        <p class="card-text">(সমন্বিত ব্যাংক) MCQ প্রশ্নের ব্যাখ্যা...
+                            <br>
+                           <small> By Satt Academy</small>  </p>
+                       <div class="mt-5"> <button style=" border: 0px solid white; height: 25px; width: 50px; background-color: rgb(0, 255, 0); padding-bottom: 5px;  ">Free</button></div> 
+                    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-5">
+    <button class="btn btn-success">More Books callection</button>
+</div>
+
+</div>
+
+<!-- top Contributer  -->
+
+<div class="card  ">
+<div class="card-body">
+<div class="container mb-5">
+  <div class="row">
+      <div class="col">
+          <h1 class="text-success text-center fa-underline "  style="text-decoration: dotted;"> টপ কন্ট্রিবিউটর </h1>
+      </div>
+  </div>
+  <div class="row mt-5 ">
+      <div class="col">
+          
+          <div class="container">
+            <div class=" border-2">
+              <div class="row">
+                  <div class="col-6">
+                    <h3>May 16, 2023</h3>
+                  </div>
+                  <div class="col-6 text-end">
+                     <h4> mouth</h4>
+                  </div>
+              </div>
+          </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-3 col-sm-12">
+                          <div class="card" style="width: 16rem;">
+                            <img src="https://www.sattacademy.com/uploads/avatar/1667482962.jpeg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                            <div class="card-body">
+                                <div class="" style="display: flex;">
+                                    <p class="card-text">Md Azizur Rahman
+                                      <br>
+                                      <small>   General (Miscellaneous)</small>  </p>
+                                      
+                                </div>
+                         </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-12">
+                          <div class="card" style="width: 16rem;">
+                            <img src="https://www.sattacademy.com/uploads/avatar/1667482962.jpeg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                            <div class="card-body">
+                                <div class="" style="display: flex;">
+                                    <p class="card-text">Md Azizur Rahman
+                                      <br>
+                                      <small>   General (Miscellaneous)</small>  </p>
+                                      
+                                </div>
+                         </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-12">
+                          <div class="card" style="width: 16rem;">
+                            <img src="https://www.sattacademy.com/uploads/avatar/1667482962.jpeg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                            <div class="card-body">
+                                <div class="" style="display: flex;">
+                                    <p class="card-text">Md Azizur Rahman
+                                      <br>
+                                      <small>   General (Miscellaneous)</small>  </p>
+                                      
+                                </div>
+                         </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-12">
+                          <div class="card" style="width: 16rem;">
+                            <img src="https://www.sattacademy.com/uploads/avatar/1667482962.jpeg" class="card-img-top" alt="Sunset Over the Sea" height="50%" />
+                            <div class="card-body">
+                                <div class="" style="display: flex;">
+                                    <p class="card-text">Md Azizur Rahman
+                                      <br>
+                                      <small>   General (Miscellaneous)</small>  </p>
+                                      
+                                </div>
+                         </div>
+                        </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <button class="btn btn-success">More Books callection</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<div>
+<section class="gradient-custom">
+<div class="container my-5 py-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+      <div class="text-center mb-4 pb-2">
+        <i class="fas fa-quote-left fa-3x text-white"></i>
+      </div>
+
+      <div class="card">
+        <div class="card-body px-4 py-5">
+          <!-- Carousel wrapper -->
+          <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators mb-0">
+              <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
+                aria-label="Slide 1"></button>
+              <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
+                aria-label="Slide 1"></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner pb-5">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="https://www.sattacademy.com/custom/founder/founder_image.png"
+                          class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="250"
+                          height="250" />
+                      </div>
+                      <div
+                        class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                      <p class="mb-0 pb-3">
+                          আস্‌সালামু আলাইকুম, স্যাট একাডেমিতে আপনাকে স্বাগতম । আমার সুদীর্ঘ ৮ বছরের অক্লান্ত পরিশ্রমের উপহার সম্পূর্ণ ওপেন প্লাটফর্ম, আজকের স্যাট একাডেমি । আমার মিশন একটাই স্যাট একাডেমির হাত ধরে “ শিক্ষা হবে উন্মুক্ত, বাণিজ্যমুক্ত” | এই প্লাটফর্মে রয়েছে একাডেমিক প্রস্তুতি, ভর্তি প্রস্তুতি, চাকরি প্রস্তুতি, স্পেশাল স্কিল এবং ধর্মীয় শিক্ষাসহ নানাবিধ বিষয়ে জ্ঞান অর্জনের সুবর্ণ সুযোগ। এটি একটি ইন্টারেক্টিভ প্লাটফর্ম যার মাধ্যমে শুধু জ্ঞান অর্জনই নয়, আপনার নিজের প্রতিভা/জ্ঞান শেয়ারের মাধ্যমে লক্ষ ইউজারকে নতুন কিছু জানানোর সুযোগ করে দিয়ে আপনিও হতে পারেন একজন গর্বিত স্যাটিয়ান। আপনাদের মূল্যবান মতামতকে অতি গুরুত্বের সাথে বিবেচনা করে স্যাটকে আরও ইউজার ফ্রেন্ডলি এবং তথ্যসমৃদ্ধ করতে স্যাটিয়ানদের নিরলস প্রচেষ্টা অব্যাহত।
+                        </p>
+                        <p>নিবেদিত স্যাটিয়ান</p>
+                        <h3>
+                          মোঃ আজিজুর রহমান
+                       </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="https://www.sattacademy.com/custom/founder/founder_image.png"
+                          class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="250"
+                          height="250" />
+                      </div>
+                      <div
+                        class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                       <p class="mb-0 pb-3">
+                          আস্‌সালামু আলাইকুম, স্যাট একাডেমিতে আপনাকে স্বাগতম । আমার সুদীর্ঘ ৮ বছরের অক্লান্ত পরিশ্রমের উপহার সম্পূর্ণ ওপেন প্লাটফর্ম, আজকের স্যাট একাডেমি । আমার মিশন একটাই স্যাট একাডেমির হাত ধরে “ শিক্ষা হবে উন্মুক্ত, বাণিজ্যমুক্ত” | এই প্লাটফর্মে রয়েছে একাডেমিক প্রস্তুতি, ভর্তি প্রস্তুতি, চাকরি প্রস্তুতি, স্পেশাল স্কিল এবং ধর্মীয় শিক্ষাসহ নানাবিধ বিষয়ে জ্ঞান অর্জনের সুবর্ণ সুযোগ। এটি একটি ইন্টারেক্টিভ প্লাটফর্ম যার মাধ্যমে শুধু জ্ঞান অর্জনই নয়, আপনার নিজের প্রতিভা/জ্ঞান শেয়ারের মাধ্যমে লক্ষ ইউজারকে নতুন কিছু জানানোর সুযোগ করে দিয়ে আপনিও হতে পারেন একজন গর্বিত স্যাটিয়ান। আপনাদের মূল্যবান মতামতকে অতি গুরুত্বের সাথে বিবেচনা করে স্যাটকে আরও ইউজার ফ্রেন্ডলি এবং তথ্যসমৃদ্ধ করতে স্যাটিয়ানদের নিরলস প্রচেষ্টা অব্যাহত।
+                        </p>
+                        <p>নিবেদিত স্যাটিয়ান</p>
+                        <h3>
+                          মোঃ আজিজুর রহমান
+                       </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="https://www.sattacademy.com/custom/founder/founder_image.png"
+                          class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="250"
+                          height="250" />
+                      </div>
+                      <div
+                        class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                       <p class="mb-0 pb-3">
+                          আস্‌সালামু আলাইকুম, স্যাট একাডেমিতে আপনাকে স্বাগতম । আমার সুদীর্ঘ ৮ বছরের অক্লান্ত পরিশ্রমের উপহার সম্পূর্ণ ওপেন প্লাটফর্ম, আজকের স্যাট একাডেমি । আমার মিশন একটাই স্যাট একাডেমির হাত ধরে “ শিক্ষা হবে উন্মুক্ত, বাণিজ্যমুক্ত” | এই প্লাটফর্মে রয়েছে একাডেমিক প্রস্তুতি, ভর্তি প্রস্তুতি, চাকরি প্রস্তুতি, স্পেশাল স্কিল এবং ধর্মীয় শিক্ষাসহ নানাবিধ বিষয়ে জ্ঞান অর্জনের সুবর্ণ সুযোগ। এটি একটি ইন্টারেক্টিভ প্লাটফর্ম যার মাধ্যমে শুধু জ্ঞান অর্জনই নয়, আপনার নিজের প্রতিভা/জ্ঞান শেয়ারের মাধ্যমে লক্ষ ইউজারকে নতুন কিছু জানানোর সুযোগ করে দিয়ে আপনিও হতে পারেন একজন গর্বিত স্যাটিয়ান। আপনাদের মূল্যবান মতামতকে অতি গুরুত্বের সাথে বিবেচনা করে স্যাটকে আরও ইউজার ফ্রেন্ডলি এবং তথ্যসমৃদ্ধ করতে স্যাটিয়ানদের নিরলস প্রচেষ্টা অব্যাহত।
+                        </p>
+                        <p>নিবেদিত স্যাটিয়ান</p>
+                        <h3>
+                          মোঃ আজিজুর রহমান
+                       </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant"
+              data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant"
+              data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel wrapper -->
+        </div>
+      </div>
+
+      <div class="text-center mt-4 pt-2">
+        <i class="fas fa-quote-right fa-3x text-white"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Satt academy
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">©2023 SATT ACADEMY. All rights reserved.</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+</main>
+<!--Main layout-->
+  
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+  
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 992, // tablet breakpoint
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768, // mobile breakpoint
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    
+    });
+
+</script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>    
+</body>
+</html>

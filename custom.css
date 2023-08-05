@@ -1,0 +1,28 @@
+.clipPath{
+    
+    height: 770px;
+    background-color: #181c32;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 93%, 66% 100%, 36% 100%, 0 92%, 0% 20%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 93%, 66% 100%, 36% 100%, 0 92%, 0% 20%);
+}
+.bgNav{
+    background-color: #181c32;
+    margin: 0 !important;
+  
+}
+.heroText{
+    padding-top: 120px;
+}
+.white-icon {
+    color: white;
+  }
+.heroTextColor{
+    background: #329BCF;
+    background: linear-gradient(to right, #b3ff00 22%, #3f09e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+ 
+}
